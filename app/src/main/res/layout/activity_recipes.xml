@@ -1,0 +1,91 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="#94E1FF">
+
+<RelativeLayout
+    android:id="@+id/main_layout"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecipeInfoActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:background="?attr/colorPrimary"
+        android:elevation="6dp"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
+
+    <ImageView
+        android:id="@+id/image_recipe"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/toolbar"
+        android:scaleType="fitCenter"
+        android:padding="@dimen/padding"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/publisher_tv"
+        android:text="Publisher:"
+        android:textStyle="bold"
+        android:textSize="@dimen/text_tv_size"
+        android:paddingBottom="@dimen/padding"
+        android:textColor="@color/text_color"
+        android:paddingLeft="@dimen/padding"
+        android:layout_below="@+id/toolbar"
+        android:layout_toRightOf="@+id/image_recipe"
+        android:layout_toEndOf="@+id/image_recipe"
+        android:layout_marginTop="45dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:paddingBottom="@dimen/padding"
+        android:paddingLeft="@dimen/padding"
+        android:layout_below="@+id/publisher_tv"
+        android:textColor="@color/text_color"
+        android:textStyle="italic"
+        android:id="@+id/publisher"
+        android:layout_toRightOf="@+id/image_recipe"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/text_tv_size"
+        android:textColor="@color/text_color"
+        android:paddingBottom="@dimen/padding"
+        android:paddingLeft="@dimen/padding"
+        android:layout_below="@+id/image_recipe"
+        android:text="Ingradients"
+        android:id="@+id/ingradients_tv"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="@color/text_color"
+        android:paddingBottom="@dimen/padding"
+        android:paddingLeft="@dimen/padding"
+        android:layout_below="@+id/ingradients_tv"
+        android:id="@+id/ingradients"
+        />
+
+</RelativeLayout>
+</ScrollView>
